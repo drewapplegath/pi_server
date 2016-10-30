@@ -1,0 +1,3 @@
+#!/bin/sh
+#linked in the init.d startup folder used to start the nfs server on boot
+server start

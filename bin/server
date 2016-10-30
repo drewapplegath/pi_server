@@ -1,0 +1,13 @@
+#!/bin/sh
+case $1 in 
+	"log") systemctl status nfs-kernel-server.service 
+	;;
+	"start") sudo /etc/init.d/nfs-kernel-server start
+	;;
+	"stop") sudo /etc/init.d/nfs-kernel-server stop
+	;;
+	"restart") sudo /etc/init.d/nfs-kernel-server restart
+	;;
+	*) echo "  flags: -log -start -stop -restart"
+	;;
+esac
